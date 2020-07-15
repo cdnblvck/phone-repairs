@@ -1,0 +1,360 @@
+#map {
+    height: 380px;
+    width: 100%
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #4d4643
+}
+
+a {
+    color: #f03c02
+}
+
+a:hover {
+    color: #fd5c28;
+    text-decoration: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Muli, sans-serif
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    right: 15px;
+    bottom: 15px;
+    background: #f03c02;
+    color: #fff;
+    transition: display .5s ease-in-out;
+    z-index: 99999
+}
+
+.back-to-top i {
+    font-size: 24px;
+    position: absolute;
+    top: 8px;
+    left: 8px
+}
+
+.back-to-top:hover {
+    color: #fff;
+    background: #fd5c28;
+    transition: .3s ease-in-out
+}
+
+@media screen and (max-width:768px) {
+    [data-aos-delay] {
+        transition-delay: 0!important
+    }
+}
+
+@media (max-width:1366px) {
+    .nav-menu .drop-down .drop-down ul {
+        left: -90%
+    }
+    .nav-menu .drop-down .drop-down:hover>ul {
+        left: -100%
+    }
+    .nav-menu .drop-down .drop-down>a:after {
+        content: "\ea9d"
+    }
+}
+
+.mobile-nav-toggle {
+    position: fixed;
+    right: 15px;
+    top: 20px;
+    z-index: 9998;
+    border: 0;
+    background: 0 0;
+    font-size: 24px;
+    transition: all .4s;
+    outline: 0!important;
+    line-height: 1;
+    cursor: pointer;
+    text-align: right
+}
+
+.mobile-nav-toggle i {
+    color: #65534c
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    z-index: 9999;
+    overflow-y: auto;
+    background: #fff;
+    transition: ease-in-out .2s;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+    padding: 10px 0
+}
+
+.mobile-nav * {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.mobile-nav a {
+    display: block;
+    position: relative;
+    color: #2b2320;
+    padding: 10px 20px;
+    font-weight: 500;
+    outline: 0;
+    text-transform: uppercase;
+    font-size: 14px
+}
+
+.mobile-nav .active>a,
+.mobile-nav a:hover,
+.mobile-nav li:hover>a {
+    color: #f03c02;
+    text-decoration: none
+}
+
+.mobile-nav .drop-down>a:after {
+    content: "\ea99";
+    font-family: IcoFont;
+    padding-left: 10px;
+    position: absolute;
+    right: 15px
+}
+
+.mobile-nav .active.drop-down>a:after {
+    content: "\eaa1"
+}
+
+.mobile-nav .drop-down>a {
+    padding-right: 35px
+}
+
+.mobile-nav .drop-down ul {
+    display: none;
+    overflow: hidden
+}
+
+.mobile-nav .drop-down li {
+    padding-left: 20px
+}
+
+.mobile-nav-overly {
+    width: 100%;
+    height: 100%;
+    z-index: 9997;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(14, 11, 10, .6);
+    overflow: hidden;
+    display: none;
+    transition: ease-in-out .2s
+}
+
+.mobile-nav-active {
+    overflow: hidden
+}
+
+.mobile-nav-active .mobile-nav {
+    opacity: 1;
+    visibility: visible
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+    color: #fff
+}
+
+@media (max-width:1024px) {
+    .cta {
+        background-attachment: scroll
+    }
+}
+
+@media (min-width:769px) {
+    .cta .cta-btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end
+    }
+}
+
+@-webkit-keyframes slide-down {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.contact .info-wrap {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, .1);
+    padding: 30px
+}
+
+.contact .info {
+    background: #fff
+}
+
+.contact .info i {
+    font-size: 20px;
+    color: #f03c02;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #ffeee8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all .3s ease-in-out
+}
+
+.contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #2b2320
+}
+
+.contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #65534c
+}
+
+.contact .info:hover i {
+    background: #f03c02;
+    color: #fff
+}
+
+.contact .php-email-form {
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, .12);
+    padding: 30px;
+    background: #fff
+}
+
+.contact .php-email-form .form-group {
+    padding-bottom: 8px
+}
+
+.contact .php-email-form .validate {
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px
+}
+
+.contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600
+}
+
+.contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600
+}
+
+.contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px
+}
+
+.contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px
+}
+
+.contact .php-email-form input {
+    height: 44px
+}
+
+.contact .php-email-form textarea {
+    padding: 10px 12px
+}
+
+.contact .php-email-form button[type=submit] {
+    background: #f03c02;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: .4s;
+    border-radius: 4px
+}
+
+.contact .php-email-form button[type=submit]:hover {
+    background: #fd5c28
+}
+
+@-webkit-keyframes animate-loading {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes animate-loading {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
